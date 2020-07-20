@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OM Photo Studio</title>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" />
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.js"></script>
+
+</head>
+
+<body data-spy="scroll" data-offset="120" data-target=".navbar">
+    <div class="container-fluid px-0">
+        <nav class="navbar navbar-dark fixed-top navbar-expand-lg" id="nav">
+            <a class="navbar-brand" href="#home">
+                <img src="images/om-photo-invert-logo.svg" width="280px">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#glry">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#abtus">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#srvs">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cntus">Contact us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+    </div>
+
+    <div class="container-fluid portfolio-bg" id="home">
+        <div class="row justify-content-center">
+            <div class="col-md-5 portfolio-block">
+                <h2 class="portfolio-heading">OM PHOTOGRAPHY</h2>
+                <p class="portfolio-subheading">If you are looking at blank cassettes on the web, you may be very confused at the difference in price.</p>
+                <!-- <a href="#glry" class="btn btn-outline-orange">EXPLORE GALLERY</a> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="container gallery" id="glry">
+        <!-- Nav tabs -->
+        <ul class="nav justify-content-center mb-5">
+            <li class="">
+                <a href="#" class="btn btn-outline-orange mx-1">Wedding</a>
+            </li>
+            <li class="">
+                <a href="#" class="btn btn-outline-orange mx-1">Pre Wedding</a>
+            </li>
+            <li class="">
+                <a href="#" class="btn btn-outline-orange active mx-1">Child</a>
+            </li>
+            <li class="">
+                <a href="#" class="btn btn-outline-orange mx-1">Studio</a>
+            </li>
+            <li class="">
+                <a href="#" class="btn btn-outline-orange mx-1">Maternity</a>
+            </li>
+            <li class="">
+                <a href="#" class="btn btn-outline-orange mx-1">Videography</a>
+            </li>
+        </ul>
+        <!-- Tab panes -->
+        <div class="portfolio-item row pb-5">
+            <div class="item col-lg-3 col-md-4 col-6 col-sm child filter">
+                <a href="images/gallery/child/child1.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+                <img class="img-fluid" src="images/gallery/child/thumbnails1.jpg" alt="">
+                </a>
+             </div>
+             <div class="item col-lg-3 col-md-4 col-6 col-sm child filter">
+                <a href="images/gallery/child/child2.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+                <img class="img-fluid" src="images/gallery/child/thumbnails2.jpg" alt="">
+                </a>
+             </div>
+             <div class="item col-lg-3 col-md-4 col-6 col-sm child filter">
+                <a href="images/gallery/child/child3.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+                <img class="img-fluid" src="images/gallery/child/thumbnails3.jpg" alt="">
+                </a>
+             </div>
+        </div>
+    </div>
+
+     <script>
+        $(document).ready(function() {
+        //     $('.portfolio-item').isotope({
+        //  	itemSelector: '.item',
+        //  	layoutMode: 'fitRows'
+        //  });
+        
+        $('.portfolio-menu ul li').click(function(){
+         	$('.portfolio-menu ul li').removeClass('active');
+         	$(this).addClass('active');
+         	
+         	var selector = $(this).attr('data-filter');
+         	$('.portfolio-item').isotope({
+         		filter:selector
+         	});
+         	return  false;
+         });
+         });
+         $(document).ready(function() {
+         var popup_btn = $('.popup-btn');
+         popup_btn.magnificPopup({
+         type : 'image',
+         gallery : {
+         	enabled : true
+         }
+         });
+         });
+
+    </script>
+
+    <!-- footer -->
+    <div class="container-fluid">
+        <div class="row footer">
+            <div class="col-md-12 py-3">
+                <p class="text-center text-light mb-0 small font-weight-light">Copyright &copy; 2020 | All rights reserved to OM PHOTO STUDIO</p>
+                <p class="text-center text-light mb-0 small font-weight-light font-italic">Design &amp; Developed by <span class="text-warning">Krushna</span></p>
+            </div>
+        </div>
+    </div>
+    <!-- footer ends -->
+
+    <!-- fixed whatsapp contact icon -->
+    <a href="https://api.whatsapp.com/send?phone=9970067070" target="_new" class="chat-icon">
+        <img src="images/whatsapp.svg" class="img-responsive">
+    </a>
+    <!-- fixed whatsapp icon ends -->
+</body>
+
+</html>

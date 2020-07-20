@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OM Photo Studio</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+
+</head>
+
+<body>
+    <div class="container-fluid px-0">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">OM Photo Studio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+    </div>
+
+    <div class="container-fluid main-bg">
+        <div class="row justify-content-center">
+            <div class="col-md-5 middle-block">
+                <h2 class="middle-heading">OM PHOTOGRAPHY</h2>
+                <p class="middle-subheading">If you are looking at blank cassettes on the web, you may be very confused
+                    at the difference in price.</p>
+                <button class="btn btn-outline-orange">EXPLORE GALLERY</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container gallery">
+        <P class="pre-heading">Take a look at</P>
+        <h5 class="heading">our Services</h5>
+
+        <div class="row">
+            <div class="col-md-12 text-center py-5">
+                <button class="btn btn-orange active filter-button px-4 mx-1" data-filter="All">All</button>
+                <button class="btn btn-outline-orange filter-button px-4 mx-1" data-filter="Wedding">Wedding</button>
+                <button class="btn btn-outline-orange filter-button px-4 mx-1" data-filter="Pre-Wedding">Pre
+                    Wedding</button>
+                <button class="btn btn-outline-orange filter-button px-4 mx-1" data-filter="Child">Child</button>
+                <button class="btn btn-outline-orange filter-button px-4 mx-1" data-filter="Studio">Studio</button>
+            </div>
+            <div class="col-sm-12">
+
+                        <div class="row pb-5 mb-5">
+                            <div class="col-lg-3 col-md-4 col-xs-6 thumb filter Wedding">
+                                <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
+                                    data-image="images/IMG_8479.JPG" data-target="#image-gallery">
+                                    <img class="img-thumbnail" src="images/IMG_8479.JPG" alt="Wedding">
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-xs-6 thumb filter Wedding">
+                                <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
+                                    data-image="images/IMG_8477.JPG" data-target="#image-gallery">
+                                    <img class="img-thumbnail" src="images/IMG_8477.JPG" alt="Wedding">
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-xs-6 thumb filter Wedding">
+                                <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
+                                    data-image="images/IMG_8479.JPG" data-target="#image-gallery">
+                                    <img class="img-thumbnail" src="images/IMG_8479.JPG" alt="Wedding">
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-xs-6 thumb filter Pre-Wedding">
+                                <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
+                                    data-image="images/IMG_8672.JPG" data-target="#image-gallery">
+                                    <img class="img-thumbnail" src="images/IMG_8672.JPG" alt="Paisaje">
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-xs-6 thumb filter Studio">
+                                <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
+                                    data-image="images/IMG_8692.JPG" data-target="#image-gallery">
+                                    <img class="img-thumbnail" src="images/IMG_8692.JPG" alt="Paisaje">
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-xs-6 thumb filter Wedding">
+                                <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
+                                    data-image="images/IMG_8418.JPG" data-target="#image-gallery">
+                                    <img class="img-thumbnail" src="images/IMG_8418.JPG" alt="Wedding">
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-xs-6 thumb filter Studio">
+                                <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
+                                    data-image="images/IMG_8763.JPG" data-target="#image-gallery">
+                                    <img class="img-thumbnail" src="images/IMG_8763.JPG" alt="Paisaje">
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-xs-6 thumb filter Studio">
+                                <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
+                                    data-image="images/IMG_8792.JPG" data-target="#image-gallery">
+                                    <img class="img-thumbnail" src="images/IMG_8792.JPG" alt="Paisaje">
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-xs-6 thumb filter Studio">
+                                <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
+                                    data-image="images/6O8A0036.JPG" data-target="#image-gallery">
+                                    <img class="img-thumbnail" src="images/6O8A0036.JPG" alt="Paisaje">
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-xs-6 thumb filter Studio">
+                                <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
+                                    data-image="images/6O8A9756.JPG" data-target="#image-gallery">
+                                    <img class="img-thumbnail" src="images/6O8A9756.JPG" alt="Paisaje">
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-xs-6 thumb filter Studio">
+                                <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
+                                    data-image="images/6O8A0109.JPG" data-target="#image-gallery">
+                                    <img class="img-thumbnail" src="images/6O8A0109.JPG" alt="Paisaje">
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-xs-6 thumb filter Studio">
+                                <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
+                                    data-image="images/6O8A9683.JPG" data-target="#image-gallery">
+                                    <img class="img-thumbnail" src="images/6O8A9683.JPG" alt="Paisaje">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="modal fade" id="image-gallery" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <button type="button" class="close" data-dismiss="modal"><span
+                                                aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+                                        </button>
+                                        <img id="image-gallery-image" class="img-responsive col-md-12" src="">
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary float-left"
+                                            id="show-previous-image"><i class="fa fa-arrow-left"></i>
+                                        </button>
+
+                                        <button type="button" id="show-next-image"
+                                            class="btn btn-secondary float-right"><i class="fa fa-arrow-right"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let modalId = $('#image-gallery');
+
+        $(document)
+            .ready(function () {
+
+                loadGallery(true, 'a.thumbnail');
+
+                //This function disables buttons when needed
+                function disableButtons(counter_max, counter_current) {
+                    $('#show-previous-image, #show-next-image')
+                        .show();
+                    if (counter_max === counter_current) {
+                        $('#show-next-image')
+                            .hide();
+                    } else if (counter_current === 1) {
+                        $('#show-previous-image')
+                            .hide();
+                    }
+                }
+
+                /**
+                 *
+                 * @param setIDs        Sets IDs when DOM is loaded. If using a PHP counter, set to false.
+                 * @param setClickAttr  Sets the attribute for the click handler.
+                 */
+
+                function loadGallery(setIDs, setClickAttr) {
+                    let current_image,
+                        selector,
+                        counter = 0;
+
+                    $('#show-next-image, #show-previous-image')
+                        .click(function () {
+                            if ($(this)
+                                .attr('id') === 'show-previous-image') {
+                                current_image--;
+                            } else {
+                                current_image++;
+                            }
+
+                            selector = $('[data-image-id="' + current_image + '"]');
+                            updateGallery(selector);
+                        });
+
+                    function updateGallery(selector) {
+                        let $sel = selector;
+                        current_image = $sel.data('image-id');
+                        $('#image-gallery-title')
+                            .text($sel.data('title'));
+                        $('#image-gallery-image')
+                            .attr('src', $sel.data('image'));
+                        disableButtons(counter, $sel.data('image-id'));
+                    }
+
+                    if (setIDs == true) {
+                        $('[data-image-id]')
+                            .each(function () {
+                                counter++;
+                                $(this)
+                                    .attr('data-image-id', counter);
+                            });
+                    }
+                    $(setClickAttr)
+                        .on('click', function () {
+                            updateGallery($(this));
+                        });
+                }
+            });
+
+        // build key actions
+        $(document)
+            .keydown(function (e) {
+                switch (e.which) {
+                    case 37: // left
+                        if ((modalId.data('bs.modal') || {})._isShown && $('#show-previous-image').is(":visible")) {
+                            $('#show-previous-image')
+                                .click();
+                        }
+                        break;
+
+                    case 39: // right
+                        if ((modalId.data('bs.modal') || {})._isShown && $('#show-next-image').is(":visible")) {
+                            $('#show-next-image')
+                                .click();
+                        }
+                        break;
+
+                    default:
+                        return; // exit this handler for other keys
+                }
+                e.preventDefault(); // prevent the default action (scroll / move caret)
+            });
+
+        //Filter Button
+
+        $(document).ready(function () {
+
+            $(".filter-button").click(function () {
+                var value = $(this).attr('data-filter');
+
+                if (value == "All") {
+                    //$('.filter').removeClass('hidden');
+                    $('.filter').show('1000');
+                } else {
+                    //            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
+                    //            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
+                    $(".filter").not('.' + value).hide('3000');
+                    $('.filter').filter('.' + value).show('3000');
+
+                }
+            });
+
+        });
+    </script>
+
+
+    <!-- about us -->
+    <div class="container-fluid about-us">
+        <P class="pre-heading">What you know</P>
+        <h5 class="heading">About Us</h5>
+
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <p class="about-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
+                    a galley of type and scrambled it to make a type specimen book. It has survived not only five
+                    centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                    popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and
+                    more recently with desktop publishing software like Aldus PageMaker including versions of Lorem
+                    Ipsum.</p>
+            </div>
+        </div>
+    </div>
+    <!-- about us ends -->
+
+    <!-- services  -->
+    <div class="container services">
+        <P class="pre-heading">Why we are</P>
+        <h5 class="heading">best in services</h5>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card service-card px-3">
+                    <div class="card-body">
+                        <object type="image/svg+xml" data="images/Services/camera.svg" class="icon">
+                            Camera
+                        </object>
+
+                        <h4 class="heading">photography</h4>
+                        <p class="">Usage of the Internet is becoming more common due to rapid advancement of technology
+                            and power.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card service-card px-3">
+                    <div class="card-body">
+                        <object type="image/svg+xml" data="images/Services/image-editing.svg" class="icon">
+                            manipulation
+                        </object>
+
+                        <h4 class="heading">image manupulation</h4>
+                        <p class="">Usage of the Internet is becoming more common due to rapid advancement of technology
+                            and power.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card service-card px-3">
+                    <div class="card-body">
+                        <object type="image/svg+xml" data="images/Services/video-camera.svg" class="icon">
+                            Videography
+                        </object>
+
+                        <h4 class="heading">photography</h4>
+                        <p class="">Usage of the Internet is becoming more common due to rapid advancement of technology
+                            and power.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card service-card px-3">
+                    <div class="card-body">
+                        <object type="image/svg+xml" data="images/Services/video-clip.svg" class="icon">
+                            Cinematography
+                        </object>
+
+                        <h4 class="heading">Cinematography</h4>
+                        <p class="">Usage of the Internet is becoming more common due to rapid advancement of technology
+                            and power.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card service-card px-3">
+                    <div class="card-body">
+                        <object type="image/svg+xml" data="images/Services/pro-photoshoot.svg" class="icon">
+                            photoshoot
+                        </object>
+
+                        <h4 class="heading">Pro Photoshoot</h4>
+                        <p class="">Usage of the Internet is becoming more common due to rapid advancement of technology
+                            and power.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card service-card px-3">
+                    <div class="card-body">
+                        <object type="image/svg+xml" data="images/Services/digital.svg" class="icon">
+                            digital media
+                        </object>
+
+                        <h4 class="heading">Digital Media</h4>
+                        <p class="">Usage of the Internet is becoming more common due to rapid advancement of technology
+                            and power.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- services ends -->
+
+    <!-- about us -->
+    <div class="container-fluid contact-us">
+        <P class="pre-heading">Say hello or</P>
+        <h5 class="heading">Let's Contact Us</h5>
+
+        <div class="row justify-content-center mt-5">
+            <div class="col-md-6">
+                <p class="">Registered Office</p>
+                <p class="address w-75 orange"><span class="address-icon"></span> OM Photo Studio, Behind Sheetal
+                    Collection, Near ST Bus Depot, Ahmednagar Beed Road, Jamkhed, Ahmednagar - 414141. Maharashtra
+                    India.</p>
+                <p class="emailid">omphotostudio@gmail.com</p>
+                <p class="contact">+91 9999 999 999</p>
+            </div>
+            <div class="col-md-4">
+
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="name" placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="cntno" placeholder="Contact No.">
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" id="desc" rows="3" placeholder="Description"></textarea>
+                    </div>
+                    <div class="form-group text-right">
+                        <button type="submit" class="btn btn-outline-orange px-4" name="submit"
+                            id="submit">Submit</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+    <!-- about us ends -->
+
+    <!-- footer -->
+    <div class="container-fluid">
+        <div class="row bg-dark">
+            <div class="col-md-12 py-3">
+                <p class="text-center text-light mb-0 small font-weight-light">Copyright &copy; 2020 | All rights reserved to OM PHOTO STUDIO</p>
+                <p class="text-center text-light mb-0 small font-weight-light font-italic">Design &amp; Developed by <span class="text-warning">Krushna</span></p>
+            </div>
+        </div>
+    </div>
+    <!-- footer ends -->
+
+    <!-- fixed whatsapp contact icon -->
+    <a href="https://api.whatsapp.com/send?phone=9970067070" class="chat-icon">
+        <img src="images/whatsapp.svg" class="img-responsive">
+    </a>
+    <!-- fixed whatsapp icon ends -->
+
+</body>
+
+</html>
